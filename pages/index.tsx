@@ -1,7 +1,6 @@
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import { Gallery } from '../components';
-import { supabase } from '../lib';
-import { Image, PokemonType } from '../types';
+import { PokemonType } from '../types';
 
 const Root: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ images }) => {
   return <Gallery images={images} />;
